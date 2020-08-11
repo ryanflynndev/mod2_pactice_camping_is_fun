@@ -1,0 +1,7 @@
+<h1>Name: <%= @camper.name%></h1>
+
+<h3>Age: <%= @camper.age%></h3>
+
+<% @camper.activities.each do |activity|%>
+    <h4><%= link_to activity.name, activity_path(activity)%></h4> <br>
+<%end%>
